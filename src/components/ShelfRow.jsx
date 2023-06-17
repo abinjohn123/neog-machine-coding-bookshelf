@@ -1,3 +1,5 @@
+import './bookshelf.scss';
+
 const ShelfRow = ({ title, books }) => {
   return (
     <div className="shelf-row">
