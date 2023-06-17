@@ -1,10 +1,10 @@
 import { useState, useContext, createContext } from 'react';
-import { books as booksDB } from './DB';
+import { BOOKS as booksDB, CATEGORIES } from './Constants';
 
 const AppContext = createContext({});
 
 const generateBookData = (books) => {
-  const categories = ['currently_reading', 'want_to_read', 'read'];
+  const categories = Object.values(CATEGORIES);
   const getRandomCategory = () => categories[Math.floor(Math.random() * 3)];
 
   return books.map((book) => ({ ...book, category: getRandomCategory() }));

@@ -1,4 +1,10 @@
-export const books = [
+export const CATEGORIES = {
+  CURRENTLY_READING: 'currently_reading',
+  WANT_TO_READ: 'want_to_read',
+  READ: 'read',
+};
+
+export const BOOKS = [
   {
     author: 'Jane Austen',
     country: 'United Kingdom',
