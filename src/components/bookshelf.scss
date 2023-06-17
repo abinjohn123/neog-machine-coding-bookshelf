@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: flex-start;
 
-    .search-icon {
+    .back-icon {
       height: 24px;
       stroke: #fafafa;
       transition: stroke 0.2s;
@@ -23,7 +23,7 @@
 
       cursor: pointer;
       &:hover {
-        .search-icon {
+        .back-icon {
           stroke: #fffc31;
         }
       }

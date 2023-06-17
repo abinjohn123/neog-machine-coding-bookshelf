@@ -16,3 +16,29 @@ body {
   background-color: #1a1a1a;
   color: #fafafa;
 }
+
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  color: #fffc31;
+
+  .search-icon {
+    height: 24px;
+    stroke: #fafafa;
+    transition: stroke 0.2s;
+  }
+
+  .search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    &:hover {
+      .search-icon {
+        stroke: #fffc31;
+      }
+    }
+  }
+}

@@ -39,7 +39,7 @@ const ShelfRow = ({ title, books, isSearch = false }) => {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="search-icon"
+              className="back-icon"
             >
               <path
                 strokeLinecap="round"
