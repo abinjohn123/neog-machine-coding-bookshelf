@@ -1,4 +1,4 @@
-const books = [
+export const books = [
   {
     author: 'Jane Austen',
     country: 'United Kingdom',
