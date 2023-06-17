@@ -1,3 +1,5 @@
+import { BookCard } from './BookCard';
+
 import './bookshelf.scss';
 
 const ShelfRow = ({ title, books }) => {
@@ -6,7 +8,7 @@ const ShelfRow = ({ title, books }) => {
       <h2 className="row-title">{title}</h2>
       <div className="row-books">
         {books.map((book, bookIndex) => (
-          <p key={bookIndex}>{book.title}</p>
+          <BookCard key={bookIndex} book={book} />
         ))}
       </div>
     </div>
