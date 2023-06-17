@@ -22,7 +22,7 @@ const ShelfRow = ({ title, books, isSearch = false }) => {
       else
         setShelfBooks(
           bookDetails.filter((book) =>
-            book.title?.toLowerCase().includes(searchQuery)
+            book.title?.toLowerCase().includes(searchQuery.toLowerCase())
           )
         );
     }
@@ -50,7 +50,7 @@ const ShelfRow = ({ title, books, isSearch = false }) => {
           </div>
           <input
             className="search-input"
-            placeholder="eg. Oliver twist"
+            placeholder="eg. Moby Dick"
             ref={inputEl}
             value={searchQuery}
             onChange={(e) =>
