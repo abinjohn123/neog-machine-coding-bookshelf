@@ -4,6 +4,21 @@ export const CATEGORIES = {
   READ: 'read',
 };
 
+export const CATEGORIES_DROPDOWN_OPTIONS = [
+  {
+    label: 'Currently Reading',
+    value: CATEGORIES.CURRENTLY_READING,
+  },
+  {
+    label: 'Want to read',
+    value: CATEGORIES.WANT_TO_READ,
+  },
+  {
+    label: 'Read',
+    value: CATEGORIES.READ,
+  },
+];
+
 export const BOOKS = [
   {
     author: 'Jane Austen',

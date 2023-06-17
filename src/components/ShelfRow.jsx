@@ -7,8 +7,8 @@ const ShelfRow = ({ title, books }) => {
     <div className="shelf-row">
       <h2 className="row-title">{title}</h2>
       <div className="row-books">
-        {books.map((book, bookIndex) => (
-          <BookCard key={bookIndex} book={book} />
+        {books.map((book) => (
+          <BookCard key={book.id} book={book} />
         ))}
       </div>
     </div>
