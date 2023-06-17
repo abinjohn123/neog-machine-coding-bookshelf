@@ -1,5 +1,31 @@
+import { useAppContext } from './AppProvider';
+import { ShelfRow } from './components/ShelfRow';
+import { CATEGORIES } from './Constants';
+
 const App = () => {
-  return <h1>This is App</h1>;
+  const { bookDetails } = useAppContext();
+  return (
+    <>
+      <ShelfRow
+        title="Currently Reading"
+        books={bookDetails.filter(
+          ({ category }) => category === CATEGORIES.CURRENTLY_READING
+        )}
+      />
+      <ShelfRow
+        title="Want to read"
+        books={bookDetails.filter(
+          ({ category }) => category === CATEGORIES.WANT_TO_READ
+        )}
+      />
+      <ShelfRow
+        title="Read"
+        books={bookDetails.filter(
+          ({ category }) => category === CATEGORIES.READ
+        )}
+      />
+    </>
+  );
 };
 
 export default App;
